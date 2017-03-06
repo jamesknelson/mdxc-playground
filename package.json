@@ -1,0 +1,31 @@
+{
+  "author": "",
+  "version": "0.1.0",
+  "description": "Sitepack-based website",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sitepack start -c sitepack.config.js",
+    "clean": "rimraf build",
+    "build": "npm run clean && sitepack build -c sitepack.config.js -o build",
+    "serve-build": "sitepack view -d build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-class-properties": "6.16.0",
+    "babel-plugin-transform-object-rest-spread": "6.19.0",
+    "babel-preset-latest": "6.16.0",
+    "babel-preset-react": "^6.11.1",
+    "node-sass": "^4.5.0",
+    "rimraf": "^2.3.4",
+    "sass-loader": "^6.0.2"
+  },
+  "dependencies": {
+    "prismjs": "^1.6.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "sitepack": "1.0.0-beta.2",
+    "sitepack-mdx-page-loader": "^1.0.0-beta.2",
+    "sitepack-react": "^1.0.0-beta.1"
+  }
+}
