@@ -1,0 +1,16 @@
+prop value
+prop onChange
+
+# Hello!
+
+You can edit this text to change the output. The `value` prop starts as `null`, but you can change it by passing `onChange` to an `<input>` element.
+
+But first, may I kindly ask your name?
+
+<input
+  value={value}
+  onChange={onChange}
+  autoFocus
+/>
+
+<p>{value && `Thanks, ${value}!`}</p>

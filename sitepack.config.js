@@ -33,14 +33,6 @@ export default ({ environment }) => ({
     },
 
     /**
-     * MDX is a tool that converts Markdown files to React components. This 
-     * loader uses MDX to create Page objects for Markdown files.
-     */
-    { test: /\.mdx?$/,
-      loader: 'sitepack-mdx-page',
-    },
-
-    /**
      * Allows you to `require()` images. Images under 4kb will be inlined with
      * a data URL, while larger images will be given their own files.
      */
@@ -62,10 +54,10 @@ export default ({ environment }) => ({
      * You can use CSS preprocessor like SASS, LESS or PostCSS by chaining
      * them with the `sitepack-css` loader.
      */
-    { test: /\.scss$/,
+    { test: /\.less$/,
       use: [
         'sitepack-css',
-        'sass'
+        'less'
       ],
     },
   ],

@@ -29,35 +29,13 @@
  * modify your Page's options.
  */
 
-import './global.scss'
+import './global.less'
 import React from 'react'
 import { createSite, createSiteTransformer, Transforms } from 'sitepack'
-import { sitepackReactTransform } from 'sitepack-react'
-import convertMDXLinkPaths from 'sitepack-mdx-page-loader/transform'
 
 export default ({ environment }) => {
   const siteTransformer = createSiteTransformer(
-    // Use `MDXWrapper` by default for any files ending with `.md` or `.mdx`.
-    Transforms.addDefaultsByPattern({
-      test: /\.mdx?$/,
-      options: {
-        wrapper: 'MDXWrapper',
-      },
-    }),
-
-    // Add metadata used by the elements provided by `sitepack-react`,
-    // including `<Router>`, `<Link>` and `<PageContentLoader>`.
-    sitepackReactTransform(),
-
-    // Convert MDX links from page ids to pathnames
-    convertMDXLinkPaths(/\.mdx?$/),
-
-    // Convert `wrapper` strings into React components by requiring a
-    // file based on the string.
-    Transforms.consumeByMap(
-      'wrapper',
-      wrapper => wrapper && require('./wrappers/'+wrapper+'.js').default
-    ),
+    Transforms.consume(['title']),
   )
 
   // Create a Site object whose root page will be the Page described by
@@ -65,7 +43,7 @@ export default ({ environment }) => {
   // 
   // This Site object will be passed through each of the transforms
   // defined above, from top to bottom.
-  const site = createSite(require('../content/index.page.js'), siteTransformer)
+  const site = createSite(require('./index.page.js'), siteTransformer)
 
   return site
 }

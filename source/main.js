@@ -23,6 +23,7 @@
  * environment, which will either be "production" or "development".
  */
 
+import 'expose-loader?Prism!prismjs'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Application from './Application'
