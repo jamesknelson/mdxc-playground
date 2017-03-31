@@ -38,7 +38,6 @@ export default ({ environment }) => ({
      */
     { test: /\.mdx?$/,
       loader: 'sitepack-mdx-page',
-      options: { es5: true },
     },
 
     /**
