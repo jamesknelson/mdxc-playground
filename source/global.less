@@ -5,6 +5,11 @@
 
 @import '~prismjs/themes/prism-tomorrow.css';
 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@import './fullscreenMDXBreadboardTheme.less';
+@import './defaultMDXBreadboardTheme.less';
+
 * {
   box-sizing: border-box;
 }
@@ -62,61 +67,3 @@ table th {
 }
 
 a { color: red; text-decoration: none }
-
-.Playground {
-  > nav {
-    position: fixed;
-    top: 0;
-    height: 40px;
-    right: 0;
-    width: 50%;
-    background-color: #555;
-
-    > span {
-      line-height: 40px;
-      cursor: pointer;
-      font-family: Monaco, monospace;
-      padding: 0 15px;
-      color: #999;
-
-      &.active {
-        color: #eee;
-      }
-    }
-  }
-
-  > textarea {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    bottom: 0;
-
-    overflow: auto;
-    resize: none;
-    border: none;
-
-    font-family: Monaco, monospace;
-    line-height: 1.5;
-    padding: 10px;
-    color: rgb(44, 44, 44);
-    font-size: 13px;
-  }
-
-  > pre, &-mount {
-    position: fixed;
-    top: 40px;
-    right: 0;
-    width: 50%;
-    bottom: 0;
-
-    overflow: auto;
-    margin: 0 !important;
-    border-radius: 0;
-  }
-
-  &-mount {
-    padding: 0 15px;
-    background-color: #f0f0f0;
-  }
-}

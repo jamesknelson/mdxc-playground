@@ -183,15 +183,15 @@ babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-babel-core@^6.14.0, babel-core@^6.22.1, babel-core@^6.23.0:
-  version "6.23.1"
-  resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.23.1.tgz#c143cb621bb2f621710c220c5d579d15b8a442df"
+babel-core@^6.24.0:
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.24.0.tgz#8f36a0a77f5c155aed6f920b844d23ba56742a02"
   dependencies:
     babel-code-frame "^6.22.0"
-    babel-generator "^6.23.0"
+    babel-generator "^6.24.0"
     babel-helpers "^6.23.0"
     babel-messages "^6.23.0"
-    babel-register "^6.23.0"
+    babel-register "^6.24.0"
     babel-runtime "^6.22.0"
     babel-template "^6.23.0"
     babel-traverse "^6.23.1"
@@ -207,9 +207,9 @@ babel-core@^6.14.0, babel-core@^6.22.1, babel-core@^6.23.0:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-generator@^6.23.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.23.0.tgz#6b8edab956ef3116f79d8c84c5a3c05f32a74bc5"
+babel-generator@^6.24.0:
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.24.0.tgz#eba270a8cc4ce6e09a61be43465d7c62c1f87c56"
   dependencies:
     babel-messages "^6.23.0"
     babel-runtime "^6.22.0"
@@ -642,7 +642,7 @@ babel-plugin-transform-strict-mode@^6.22.0:
     babel-runtime "^6.22.0"
     babel-types "^6.22.0"
 
-babel-preset-es2015@^6.22.0, babel-preset-es2015@^6.24.0:
+babel-preset-es2015@^6.24.0:
   version "6.24.0"
   resolved "https://registry.yarnpkg.com/babel-preset-es2015/-/babel-preset-es2015-6.24.0.tgz#c162d68b1932696e036cd3110dc1ccd303d2673a"
   dependencies:
@@ -690,15 +690,7 @@ babel-preset-flow@^6.23.0:
   dependencies:
     babel-plugin-transform-flow-strip-types "^6.22.0"
 
-babel-preset-latest@^6.22.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-latest/-/babel-preset-latest-6.22.0.tgz#47b800531350a3dc69126e8c375a40655cd1eeff"
-  dependencies:
-    babel-preset-es2015 "^6.22.0"
-    babel-preset-es2016 "^6.22.0"
-    babel-preset-es2017 "^6.22.0"
-
-babel-preset-latest@^6.24.0:
+babel-preset-latest@^6.22.0, babel-preset-latest@^6.24.0:
   version "6.24.0"
   resolved "https://registry.yarnpkg.com/babel-preset-latest/-/babel-preset-latest-6.24.0.tgz#a68d20f509edcc5d7433a48dfaebf7e4f2cd4cb7"
   dependencies:
@@ -717,11 +709,11 @@ babel-preset-react@^6.11.1, babel-preset-react@^6.22.0:
     babel-plugin-transform-react-jsx-source "^6.22.0"
     babel-preset-flow "^6.23.0"
 
-babel-register@^6.22.0, babel-register@^6.23.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel-register/-/babel-register-6.23.0.tgz#c9aa3d4cca94b51da34826c4a0f9e08145d74ff3"
+babel-register@^6.24.0:
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/babel-register/-/babel-register-6.24.0.tgz#5e89f8463ba9970356d02eb07dabe3308b080cfd"
   dependencies:
-    babel-core "^6.23.0"
+    babel-core "^6.24.0"
     babel-runtime "^6.22.0"
     core-js "^2.4.0"
     home-or-tmp "^2.0.0"
@@ -1003,6 +995,10 @@ clap@^1.0.9:
   resolved "https://registry.yarnpkg.com/clap/-/clap-1.1.2.tgz#316545bf22229225a2cecaa6824cd2f56a9709ed"
   dependencies:
     chalk "^1.1.3"
+
+classnames@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
 clean-css@4.0.x:
   version "4.0.8"
@@ -1546,6 +1542,10 @@ evp_bytestokey@^1.0.0:
   resolved "https://registry.yarnpkg.com/evp_bytestokey/-/evp_bytestokey-1.0.0.tgz#497b66ad9fef65cd7c08a6180824ba1476b66e53"
   dependencies:
     create-hash "^1.1.1"
+
+exenv@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.1.tgz#75de1c8dee02e952b102aa17f8875973e0df14f9"
 
 expand-brackets@^0.1.4:
   version "0.1.5"
@@ -2471,11 +2471,11 @@ mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
-mdxc@^1.0.0-beta.1:
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/mdxc/-/mdxc-1.0.0-beta.1.tgz#b0e5140cb1b996369c04f8a585cc920243e0d53f"
+mdxc@^1.0.0-beta.1, mdxc@^1.0.0-beta.2:
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/mdxc/-/mdxc-1.0.0-beta.2.tgz#93cbaaea5f4bf66876c696ad03f32886d8715868"
   dependencies:
-    babel-core "^6.22.1"
+    babel-core "^6.24.0"
     babel-plugin-syntax-jsx "^6.18.0"
     babel-plugin-transform-react-jsx "^6.23.0"
     commander "^2.9.0"
@@ -3270,6 +3270,10 @@ react-prism@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-prism/-/react-prism-4.0.0.tgz#9a2bc384820dfa9ba8f5e08120ef62eed868fb50"
 
+react-textarea-autosize@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-4.0.5.tgz#55379f6a6fa575fc87d1b8de2756e57e3b6c995d"
+
 react@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
@@ -3468,6 +3472,10 @@ requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
+resize-observer-polyfill@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.4.2.tgz#a37198e6209e888acb1532a9968e06d38b6788e5"
+
 resolve-pathname@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.0.2.tgz#e55c016eb2e9df1de98e85002282bfb38c630436"
@@ -3594,17 +3602,17 @@ sitepack-react@^1.0.0-beta.7:
   dependencies:
     junctions "^0.3.3"
 
-sitepack@1.0.0-beta.3:
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/sitepack/-/sitepack-1.0.0-beta.3.tgz#1d2903d685b5910ca08de5f7cad4b8ac9b016b54"
+sitepack@^1.0.0-beta.4:
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/sitepack/-/sitepack-1.0.0-beta.4.tgz#3207ba877b956b1a1be18f6d7f6559f52e24672d"
   dependencies:
-    babel-core "^6.22.1"
+    babel-core "^6.24.0"
     babel-loader "^6.2.10"
     babel-plugin-transform-class-properties "^6.22.0"
     babel-plugin-transform-object-rest-spread "^6.22.0"
     babel-preset-latest "^6.22.0"
     babel-preset-react "^6.22.0"
-    babel-register "^6.22.0"
+    babel-register "^6.24.0"
     chalk "^1.1.3"
     commander "^2.9.0"
     css-loader "^0.23.1"

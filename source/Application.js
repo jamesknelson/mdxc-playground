@@ -1,6 +1,18 @@
 import React, { Component, PropTypes } from 'react'
 import { PageContentLoader } from 'sitepack-react'
-import Playground from './Playground'
+import { MDXBreadboard } from './Breadboard'
+import fullscreenMDXBreadboardTheme from './fullscreenMDXBreadboardTheme'
+
+
+function breadboardRequire(name) {
+  if (name === 'react') {
+    return React
+  }
+  else if (name === 'mdx-breadboard') {
+    return MDXBreadboard
+  }
+}
+
 
 
 export default class Application extends Component {
@@ -14,7 +26,11 @@ export default class Application extends Component {
       { errorMessage &&
         <div style={{color: 'red'}}>{errorMessage}</div>
       }
-      <Playground children={content} />
+      <MDXBreadboard
+        defaultSource={content}
+        theme={fullscreenMDXBreadboardTheme}
+        require={breadboardRequire}
+      />
     </div>
 
   render() {
