@@ -1,15 +1,15 @@
 import React, { Component, PropTypes } from 'react'
 import { PageContentLoader } from 'sitepack-react'
-import { MDXBreadboard } from './Breadboard'
+import { MDXBreadboard } from 'armo-breadboard'
 import fullscreenMDXBreadboardTheme from './fullscreenMDXBreadboardTheme'
 
 
 function breadboardRequire(name) {
   if (name === 'react') {
-    return React
+    return require('react')
   }
-  else if (name === 'mdx-breadboard') {
-    return MDXBreadboard
+  else if (name === 'armo-breadboard') {
+    return require('armo-breadboard')
   }
 }
 

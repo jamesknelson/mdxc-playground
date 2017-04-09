@@ -86,6 +86,17 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+armo-breadboard@^0.2.0-beta.1:
+  version "0.2.0-beta.1"
+  resolved "https://registry.yarnpkg.com/armo-breadboard/-/armo-breadboard-0.2.0-beta.1.tgz#86112c4dd396768e8511d860a5da5fb3e6b1e184"
+  dependencies:
+    babel-core "^6.24.0"
+    babel-preset-latest "^6.24.0"
+    exenv "^1.2.1"
+    hatt "^0.2.1"
+    mdxc "^1.0.0-beta.4"
+    resize-observer-polyfill "^1.4.2"
+
 arr-diff@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-2.0.0.tgz#8f3b827f955a8bd669697e4a4256ac3ceae356cf"
@@ -1895,6 +1906,10 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.1"
 
+hatt@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/hatt/-/hatt-0.2.1.tgz#89e20c396268520883c62e50f3d2f60431402c45"
+
 hawk@~3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/hawk/-/hawk-3.1.3.tgz#078444bd7c1640b0fe540d2c9b73d59678e8e1c4"
@@ -2471,9 +2486,22 @@ mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
 
-mdxc@^1.0.0-beta.1, mdxc@^1.0.0-beta.2:
+mdxc@^1.0.0-beta.1:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/mdxc/-/mdxc-1.0.0-beta.2.tgz#93cbaaea5f4bf66876c696ad03f32886d8715868"
+  dependencies:
+    babel-core "^6.24.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    babel-plugin-transform-react-jsx "^6.23.0"
+    commander "^2.9.0"
+    front-matter "^2.1.2"
+    markdown-it "^8.2.2"
+    parsimmon "^1.2.0"
+    slugify "^1.1.0"
+
+mdxc@^1.0.0-beta.4:
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/mdxc/-/mdxc-1.0.0-beta.4.tgz#f510601d2ad60295e8e153cb870bd25f625f1bb9"
   dependencies:
     babel-core "^6.24.0"
     babel-plugin-syntax-jsx "^6.18.0"

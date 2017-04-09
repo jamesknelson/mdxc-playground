@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import createClassNamePrefixer from './createClassNamePrefixer'
-import { MDXBreadboard } from './Breadboard'
+import defaultMDXBreadboardtheme from './defaultMDXBreadboardtheme'
+import { MDXBreadboard } from 'armo-breadboard'
 import HighlightedCodeBlock from './HighlightedCodeBlock'
 
 
@@ -8,7 +9,7 @@ const cx = createClassNamePrefixer('fullscreenMDXBreadboardTheme')
 
 
 export default {
-  maxSinglePaneWidth: 999,
+  maxSinglePaneWidth: 800,
   
   renderBreadboard: function(props) {
     const {
@@ -61,7 +62,7 @@ export default {
           }
           <span className={cx('modes')}>
             <span className={cx('mode', { active: modes.transformed })} onClick={modeActions.selectTransformed}>Output</span>
-            <span className={cx('mode', { active: modes.component })} onClick={modeActions.selectComponent}>Preview</span>
+            <span className={cx('mode', { active: modes.view })} onClick={modeActions.selectComponent}>Preview</span>
             { activeModeCount === 1 &&
               <span className={cx('mode', { active: modes.source })} onClick={modeActions.selectSource}>Source</span>
             }
@@ -70,7 +71,7 @@ export default {
         { modes.source &&
           renderEditorElement({ layout: sourceLayout })
         }
-        { modes.component &&
+        { modes.view &&
           <div className={cx('preview')} style={secondaryLayout}>
             {renderMountElement()}
           </div>
@@ -87,11 +88,11 @@ export default {
     )
   },
 
-  renderCode: function({ language, breadboard, source }) {
-    if (breadboard) {
+  renderCode: function({ language, renderBreadboard, source }) {
+    if (renderBreadboard) {
       return (
         <div style={{ maxWidth: 'none', width: '100%' }}>
-          {breadboard}
+          {renderBreadboard({theme: defaultMDXBreadboardtheme})}
         </div>
       )
     }
